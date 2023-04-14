@@ -163,12 +163,24 @@ NAVY BLUE #2E2F42*/
 
 /*Hero*/
 .hero {
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
   background-color: var(--dark-bg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-
+/*url(../images/people-office.jpg)*/
 .hero-title {
   max-width: 496px;
   margin-left: auto;
@@ -191,6 +203,7 @@ NAVY BLUE #2E2F42*/
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 /*Features*/
@@ -208,6 +221,17 @@ NAVY BLUE #2E2F42*/
 .feature-item:last-child {
   margin-right: 0;
 }
+.conteiner-feature-icon {
+  display: flex;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: var(--cloud-bg);
+}
+
 .feature-title {
   margin-bottom: 8px;
 
@@ -227,7 +251,6 @@ NAVY BLUE #2E2F42*/
 
 /*What are we doing*/
 .page-example {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 .example-list {
@@ -241,7 +264,7 @@ NAVY BLUE #2E2F42*/
   margin-right: 0;
 }
 .example-title {
-  margin-bottom: 72px;
+  /* margin-bottom: 72px;*/
 }
 
 /*Our Team*/
@@ -252,7 +275,7 @@ NAVY BLUE #2E2F42*/
   background-color: var(--cloud-bg);
 }
 .our-team {
-  margin-bottom: 72px;
+  /*margin-bottom: 72px;*/
 }
 .team-list {
   display: flex;
@@ -270,12 +293,14 @@ NAVY BLUE #2E2F42*/
 .team-card {
   width: calc((100%-72px) / 4);
   margin-right: 24px;
-  /*margin-bottom: 30px;*/
   background-color: var(--button-text-primary);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-card:nth-child(4n) {
   margin-right: 0;
 }
+
 /*.team-card:nth-last-child(-n + 4) {
   margin-bottom: 0;
 }*/
@@ -287,10 +312,62 @@ NAVY BLUE #2E2F42*/
   border-radius: 0px 0px 4px 4px;
 }
 .team-text {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
+}
+.team-icon-list {
+  display: flex;
+  padding: 0;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.social-icon {
+  fill: currentColor;
+}
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--pressed-state);
+}
+
+/*Cuctomers*/
+.page-customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.client-list {
+  display: flex;
+  gap: 24px;
+}
+.client-item {
+  width: 168px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.client-link {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: #8e8f99;
+}
+.client {
+  fill: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--pressed-state);
+  color: var(--pressed-state);
 }
 
 /*button*/
@@ -364,18 +441,47 @@ NAVY BLUE #2E2F42*/
 
   background-color: #2e2f42;
 }
-.footer-box > .logo {
+.footer-box {
+  display: flex;
+}
+.logo-box {
+  margin-right: 120px;
+}
+.logo-box > .logo {
   display: inline-block;
   margin-bottom: 16px;
 }
 .text-footer {
   max-width: 264px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud-bg);
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+  min-width: 208px;
+}
+.text-social {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.social-icon-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footet-social-link:hover,
+.footet-social-link:focus {
+  background-color: #31d0aa;
 }
 
 /*Portfolio*/
@@ -394,7 +500,12 @@ NAVY BLUE #2E2F42*/
 .portfolio-link {
   background-color: var(--button-text-primary);
 }
-
+.portfolio-link:hover,
+.portfolio-link:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .card-content {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
