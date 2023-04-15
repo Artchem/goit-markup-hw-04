@@ -348,16 +348,16 @@ NAVY BLUE #2E2F42*/
   gap: 24px;
 }
 .client-item {
-  display: block;
+  display: flex;
   width: calc((100% - 120px) / 6);
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 .client-link {
+  display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 32px;
