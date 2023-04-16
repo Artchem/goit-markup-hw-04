@@ -443,6 +443,7 @@ NAVY BLUE #2E2F42*/
 }
 .footer-box {
   display: flex;
+  align-items: baseline;
 }
 .logo-box {
   margin-right: 120px;
