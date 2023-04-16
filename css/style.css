@@ -57,7 +57,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 /*цвет основного текста
@@ -216,14 +216,11 @@ NAVY BLUE #2E2F42*/
 }
 .conteiner-feature-icon {
   display: flex;
+  height: 112px;
   align-items: center;
   justify-content: center;
-  padding: 24px 100px;
   margin-bottom: 8px;
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
   background-color: var(--cloud-bg);
 }
 
@@ -358,7 +355,6 @@ NAVY BLUE #2E2F42*/
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
@@ -447,8 +443,9 @@ NAVY BLUE #2E2F42*/
 }
 .footer-box {
   display: flex;
-  gap: 120px;
-  align-items: baseline;
+}
+.logo-box {
+  margin-right: 120px;
 }
 .logo-box > .logo {
   display: inline-block;
@@ -511,8 +508,6 @@ NAVY BLUE #2E2F42*/
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
-  background-color: #fff;
-  border: #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
